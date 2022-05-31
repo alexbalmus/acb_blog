@@ -7,16 +7,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * A blog
+ * A blog post comment
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Blog
+public class Comment
 {
-    private String id;
-    private String name;
-    private String handle;
-    private List<Entry> entries;
-    private User user;
+    private String text;
+    private List<Comment> replies;
 }

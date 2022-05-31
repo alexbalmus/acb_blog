@@ -7,6 +7,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+enum CommentsOption
+{
+    ALLOWED, MODERATED, DISABLED
+}
+
 /**
  * A blog entry
  */
@@ -15,8 +20,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Entry
 {
+    private String id;
+    private Blog blog;
     private String title;
     private String content;
     private LocalDate date;
+    private CommentsOption commentsOption = CommentsOption.MODERATED;
+    private List<Comment> comments;
     private List<Tag> tags;
 }
