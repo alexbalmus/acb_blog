@@ -1,16 +1,17 @@
 package com.alexbalmus.blog.usecases.responses;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import com.alexbalmus.blog.usecases.dtos.BlogDTO;
 
-import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
+@Builder
 public class BlogHandlingResponse
 {
-    private BlogDTO blogDTO;
-    private String status;
+    private boolean success;
+    private Collection<BlogDTO> blogs = new ArrayList<>();
 }
