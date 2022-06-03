@@ -7,8 +7,6 @@ import java.util.Map;
 import com.alexbalmus.blog.usecases.dtos.BlogDTO;
 import com.alexbalmus.blog.usecases.gateways.BlogPersistenceGateway;
 
-import lombok.CustomLog;
-
 public class InMemoryStore implements BlogPersistenceGateway
 {
     Map<String, BlogDTO> blogs = new HashMap<>();

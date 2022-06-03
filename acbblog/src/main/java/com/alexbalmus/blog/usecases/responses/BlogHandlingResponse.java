@@ -13,5 +13,5 @@ import lombok.Data;
 public class BlogHandlingResponse
 {
     private boolean success;
-    private Collection<BlogDTO> blogs = new ArrayList<>();
+    private Collection<BlogDTO> blogs;
 }

@@ -7,11 +7,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-enum CommentsOption
-{
-    ALLOWED, MODERATED, DISABLED
-}
-
 /**
  * A blog entry
  */
